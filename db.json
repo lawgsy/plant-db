@@ -1,19 +1,19 @@
 {
   "plants": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Turmeric",
       "desc": "Turmeric is a rhizomatous herbaceous perennial plant of the ginger family, Zingiberaceae. It is native to southern Asia, requiring temperatures between 20 and 30 °C and a considerable amount of annual rainfall to thrive."
     }, {
-      "id": "2",
+      "id": 2,
       "name": "Cumin",
       "desc": "Cumin is a flowering plant in the family Apiaceae, native from the east Mediterranean to South Asia. Its seeds are used in the cuisines of many different cultures, in both whole and ground form."
     }, {
-      "id": "3",
+      "id": 3,
       "name": "Thyme",
       "desc": "Thyme is an evergreen herb with culinary, medicinal, and ornamental uses. The most common variety is Thymus vulgaris. Thyme is of the genus Thymus of the mint family, and a relative of the oregano genus Origanum."
     }, {
-      "id": "4",
+      "id": 4,
       "name": "Basil",
       "desc": "Basil, also called great basil or Saint-Joseph's-wort, is a culinary herb of the family Lamiaceae. It is also called the 'king of herbs' and the 'royal herb'. The name 'basil' comes from Greek βασιλικόν φυτόν, 'royal/kingly plant'."
     }
