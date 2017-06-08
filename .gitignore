@@ -1,0 +1,11 @@
+# Files
+dist/
+
+# File types
+*.log
+
+# Dependency directories
+node_modules/
+elm-stuff/
+
+# Other
