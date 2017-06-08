@@ -1,13 +1,12 @@
 module Plants.List exposing (..)
 
 import Html exposing (..)
-import Html.Attributes exposing (href, class, style)
 
 
 -- Material
--- import Material
 
 import Material.Table as Table
+import Material.Options as Options
 
 
 -- App related
@@ -19,7 +18,7 @@ import Models exposing (Plant)
 view : List Plant -> Html Msg
 view plants =
     div []
-        [ Table.table []
+        [ Table.table [ Options.cs "mx-auto" ]
             [ Table.thead []
                 [ Table.tr []
                     [ Table.th [ Table.numeric ] [ text "Id" ]
@@ -40,16 +39,3 @@ view plants =
                 )
             ]
         ]
-
-
-
---
--- plantRow : Plant -> Html Msg
--- plantRow plant =
---     tr []
---         [ td [] [ text (toString plant.id) ]
---         , td [] [ text plant.name ]
---         , td [] [ text plant.desc ]
---         , td []
---             []
---         ]

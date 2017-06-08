@@ -1,7 +1,7 @@
 module View exposing (..)
 
 import Html exposing (Html, h1, text, div)
-import Html.Attributes exposing (style)
+import Html.Attributes exposing (style, class)
 import Msgs exposing (Msg)
 import Models exposing (Model)
 import Plants.List
@@ -25,7 +25,7 @@ view model =
         model.mdl
         [ Layout.fixedHeader
         ]
-        { header = [ h1 [ style [ ( "padding-left", "2rem" ) ] ] [ text "Plants" ] ]
+        { header = [ h1 [ class "pl3" ] [ text "Plants" ] ]
         , drawer = []
         , tabs = ( [], [] )
         , main = [ viewBody model ]
@@ -34,4 +34,4 @@ view model =
 
 viewBody : Model -> Html Msg
 viewBody model =
-    div [ style [ ( "padding", "2rem" ) ] ] [ Plants.List.view model.plants ]
+    div [ class "p3" ] [ Plants.List.view model.plants ]
