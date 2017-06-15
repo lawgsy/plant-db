@@ -2,6 +2,14 @@
 
 Plant database with search. Mainly for toxicity/culinary/medical information.
 
+# ToDo
+
+- Search/filter
+- Show individual plant information
+- Fancy layout
+- Support for other devices
+- Add plant information
+
 # Installation
 
 1. Install [Elm](http://elm-lang.org/)
