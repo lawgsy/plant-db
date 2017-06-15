@@ -26,16 +26,15 @@ view plants =
                     , Table.th [ Table.numeric ] [ text "Description" ]
                     ]
                 ]
-            , Table.tbody []
-                (plants
-                    |> List.map
-                        (\plant ->
-                            Table.tr []
-                                [ Table.td [ Table.numeric ] [ text (toString plant.id) ]
-                                , Table.td [ Table.numeric ] [ text plant.name ]
-                                , Table.td [ Table.numeric ] [ text plant.desc ]
-                                ]
-                        )
-                )
+            , Table.tbody [] (List.map plantRow plants)
             ]
+        ]
+
+
+plantRow : Plant -> Html Msg
+plantRow plant =
+    Table.tr []
+        [ Table.td [ Table.numeric ] [ text (toString plant.id) ]
+        , Table.td [ Table.numeric ] [ text plant.name ]
+        , Table.td [ Table.numeric ] [ text plant.desc ]
         ]
