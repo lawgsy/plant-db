@@ -2,7 +2,7 @@
 
 Plant database with search. Mainly for toxicity/culinary/medical information.
 
-# ToDo
+# TODO
 
 - Search/filter
 - Show individual plant information
