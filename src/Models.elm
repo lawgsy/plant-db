@@ -26,7 +26,7 @@ type alias PlantId =
 
 
 type alias Plant =
-    { id : Int
+    { id : PlantId
     , name : String
     , desc : String
     }
