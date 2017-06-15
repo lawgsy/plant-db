@@ -5,9 +5,16 @@ module Models exposing (..)
 import Material
 
 
+-- App related
+
+import RemoteData exposing (WebData)
+
+
 type alias Model =
-    { mdl : Material.Model
-    , plants : List Plant
+    { mdl :
+        Material.Model
+        -- , plants : List Plant
+    , plants : WebData (List Plant)
     }
 
 
@@ -15,9 +22,10 @@ initialModel : Model
 initialModel =
     { mdl = Material.model
     , plants =
-        [ { id = 1, name = "Basil", desc = "A green plant." }
-        , { id = 2, name = "Thyme", desc = "Another green plant." }
-        ]
+        RemoteData.Loading
+        -- [ { id = 1, name = "Basil", desc = "A green plant." }
+        -- , { id = 2, name = "Thyme", desc = "Another green plant." }
+        -- ]
     }
 
 

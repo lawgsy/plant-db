@@ -1,8 +1,16 @@
 module Msgs exposing (..)
 
+-- Material
+
 import Material
 
 
+-- App related
+
+import Models exposing (Plant)
+import RemoteData exposing (WebData)
+
+
 type Msg
-    = NoOp
-    | Mdl (Material.Msg Msg)
+    = Mdl (Material.Msg Msg)
+    | OnFetchPlants (WebData (List Plant))

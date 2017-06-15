@@ -25,7 +25,7 @@ view model =
         model.mdl
         [ Layout.fixedHeader
         ]
-        { header = [ h1 [ class "pl3" ] [ text "Plants" ] ]
+        { header = [ h1 [ class "pl3" ] [ text "Plant database" ] ]
         , drawer = []
         , tabs = ( [], [] )
         , main = [ viewBody model ]

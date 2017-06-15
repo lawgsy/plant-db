@@ -1,15 +1,22 @@
 module Main exposing (..)
 
+-- App related
+
 import Html exposing (program)
 import Msgs exposing (Msg)
 import Models exposing (Model, initialModel)
 import Update exposing (update)
 import View exposing (view)
+import Commands exposing (fetchPlants)
 
 
 init : ( Model, Cmd Msg )
 init =
-    ( initialModel, Cmd.none )
+    ( initialModel, fetchPlants )
+
+
+
+-- ( initialModel, Cmd.none )
 
 
 subscriptions : Model -> Sub Msg
