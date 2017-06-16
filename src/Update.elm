@@ -10,6 +10,12 @@ import Material.Table as Table
 
 import Msgs exposing (Msg(..))
 import Models exposing (Model)
+import Routing exposing (parseLocation)
+
+
+-- import UrlParser exposing (..)
+
+import Navigation exposing (..)
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -25,6 +31,18 @@ update msg model =
 
         ReorderTable ->
             ( { model | tableOrder = rotate model.tableOrder }, Cmd.none )
+
+        Msgs.OnLocationChange location ->
+            let
+                newRoute =
+                    parseLocation location
+            in
+                ( { model | route = newRoute }, Cmd.none )
+
+        Msgs.NewLocation url ->
+            ( model
+            , Navigation.newUrl url
+            )
 
 
 rotate : Maybe Table.Order -> Maybe Table.Order

@@ -5,6 +5,7 @@ import Html exposing (..)
 
 -- import Html.Attributes exposing (src, width, height)
 
+import Html.Events exposing (onClick)
 import Msgs exposing (Msg)
 
 
@@ -20,6 +21,10 @@ import Material.Options as Options exposing (nop)
 import Msgs exposing (Msg)
 import Models exposing (Plant, Data)
 import RemoteData exposing (WebData)
+import Routing exposing (plantPath)
+
+
+-- import Navigation exposing (load)
 
 
 view : WebData Data -> Maybe Table.Order -> Html Msg
@@ -84,7 +89,9 @@ showData response order =
 
 plantRow : Plant -> Html Msg
 plantRow plant =
-    Table.tr []
+    --(parseLocation plant.id)(plantPath plant.id)
+    -- Options.attribute <| onClick (text "#test")
+    Table.tr [ Options.attribute <| onClick (Msgs.NewLocation (plantPath plant.id)) ]
         -- [ Table.td [ Table.numeric ] [ text (toString plant.id) ]
         [ Table.td [ Options.cs "max-width-4", Table.numeric ] [ text plant.name ]
         , Table.td [ Options.cs "max-width-4" ] [ text plant.desc ]

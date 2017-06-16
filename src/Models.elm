@@ -11,23 +11,27 @@ import Material.Table as Table
 import RemoteData exposing (WebData)
 
 
+-- type alias Mdl =
+--   Material.Model
+
+
 type alias Model =
     { mdl :
         Material.Model
         -- , plants : List Plant
     , data : WebData Data
     , tableOrder : Maybe Table.Order
-    , runtimeError : Maybe String
+    , route : Route
     }
 
 
-initialModel : Model
-initialModel =
+initialModel : Route -> Model
+initialModel route =
     { mdl = Material.model
     , data =
         RemoteData.Loading
     , tableOrder = Just Table.Ascending
-    , runtimeError = Nothing
+    , route = route
     }
 
 
@@ -46,3 +50,9 @@ type alias Plant =
 type alias Data =
     { plants : List Plant
     }
+
+
+type Route
+    = PlantsRoute
+    | PlantRoute PlantId
+    | NotFoundRoute
