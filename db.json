@@ -3,19 +3,23 @@
     {
       "id": 1,
       "name": "Turmeric",
-      "desc": "Turmeric is a rhizomatous herbaceous perennial plant of the ginger family, Zingiberaceae. It is native to southern Asia, requiring temperatures between 20 and 30 °C and a considerable amount of annual rainfall to thrive."
+      "desc": "A rhizomatous herbaceous perennial plant of the ginger family, Zingiberaceae. It is native to southern Asia, requiring temperatures between 20 and 30 °C and a considerable amount of annual rainfall to thrive."
     }, {
       "id": 2,
       "name": "Cumin",
-      "desc": "Cumin is a flowering plant in the family Apiaceae, native from the east Mediterranean to South Asia. Its seeds are used in the cuisines of many different cultures, in both whole and ground form."
+      "desc": "A flowering plant in the family Apiaceae, native from the east Mediterranean to South Asia. Its seeds are used in the cuisines of many different cultures, in both whole and ground form."
     }, {
       "id": 3,
       "name": "Thyme",
-      "desc": "Thyme is an evergreen herb with culinary, medicinal, and ornamental uses. The most common variety is Thymus vulgaris. Thyme is of the genus Thymus of the mint family, and a relative of the oregano genus Origanum."
+      "desc": "An evergreen herb with culinary, medicinal, and ornamental uses. The most common variety is Thymus vulgaris. It is of the genus Thymus of the mint family, and a relative of the oregano genus Origanum."
     }, {
       "id": 4,
       "name": "Basil",
-      "desc": "Basil, also called great basil or Saint-Joseph's-wort, is a culinary herb of the family Lamiaceae. It is also called the 'king of herbs' and the 'royal herb'. The name 'basil' comes from Greek βασιλικόν φυτόν, 'royal/kingly plant'."
+      "desc": "Also called great basil or Saint-Joseph's-wort. It is a culinary herb of the family Lamiaceae. It is also called the 'king of herbs' and the 'royal herb'. The name 'basil' comes from Greek βασιλικόν φυτόν, 'royal/kingly plant'."
+    }, {
+      "id": 5,
+      "name": "Oregano",
+      "desc": "Native to temperate western and southwestern Eurasia and the Mediterranean region. It is a perennial herb, growing from 20–80 cm (7.9–31.5 in) tall, with opposite leaves 1–4 cm (0.39–1.57 in) long."
     }
   ]
 }

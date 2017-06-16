@@ -6,6 +6,7 @@ import Html exposing (..)
 -- Material
 
 import Material.Table as Table
+import Material.Progress as Loading
 import Material.Options as Options
 
 
@@ -25,19 +26,28 @@ showData : WebData (List Plant) -> Html Msg
 showData response =
     case response of
         RemoteData.NotAsked ->
-            text ""
+            div []
+                [ text "Requesting data"
+                , Loading.indeterminate
+                ]
 
         RemoteData.Loading ->
-            text "Loading..."
+            div []
+                [ text "Loading data"
+                , Loading.indeterminate
+                ]
 
         RemoteData.Failure error ->
-            text (toString error)
+            div []
+                [ text "An error occurred:"
+                , p [] [ text (toString error) ]
+                ]
 
         RemoteData.Success plants ->
             Table.table []
                 -- Table.table [ Options.cs "mx-auto" ]
                 [ Table.thead []
-                    [ Table.tr [ Options.cs "max-width-1" ]
+                    [ Table.tr []
                         -- [ Table.th [ Table.numeric ] [ text "Id" ]
                         -- ,
                         [ Table.th [ Table.numeric ] [ text "Name" ]
@@ -52,6 +62,6 @@ plantRow : Plant -> Html Msg
 plantRow plant =
     Table.tr []
         -- [ Table.td [ Table.numeric ] [ text (toString plant.id) ]
-        [ Table.td [ Table.numeric ] [ text plant.name ]
-        , Table.td [ Table.numeric ] [ text plant.desc ]
+        [ Table.td [ Options.cs "max-width-4", Table.numeric ] [ text plant.name ]
+        , Table.td [ Options.cs "max-width-4", Table.numeric ] [ text plant.desc ]
         ]
