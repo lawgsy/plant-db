@@ -34,4 +34,4 @@ view model =
 
 viewBody : Model -> Html Msg
 viewBody model =
-    div [ class "p3" ] [ Plants.List.view model.plants ]
+    div [ class "p3" ] [ (Plants.List.view model.data model.tableOrder) ]

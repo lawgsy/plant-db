@@ -3,6 +3,7 @@ module Models exposing (..)
 -- Material
 
 import Material
+import Material.Table as Table
 
 
 -- App related
@@ -14,7 +15,8 @@ type alias Model =
     { mdl :
         Material.Model
         -- , plants : List Plant
-    , plants : WebData (List Plant)
+    , data : WebData Data
+    , tableOrder : Maybe Table.Order
     , runtimeError : Maybe String
     }
 
@@ -22,11 +24,9 @@ type alias Model =
 initialModel : Model
 initialModel =
     { mdl = Material.model
-    , plants =
+    , data =
         RemoteData.Loading
-        -- [ { id = 1, name = "Basil", desc = "A green plant." }
-        -- , { id = 2, name = "Thyme", desc = "Another green plant." }
-        -- ]
+    , tableOrder = Just Table.Ascending
     , runtimeError = Nothing
     }
 
@@ -39,4 +39,10 @@ type alias Plant =
     { id : PlantId
     , name : String
     , desc : String
+    , img : String
+    }
+
+
+type alias Data =
+    { plants : List Plant
     }

@@ -3,23 +3,28 @@
     {
       "id": 1,
       "name": "Turmeric",
-      "desc": "A rhizomatous herbaceous perennial plant of the ginger family, Zingiberaceae. It is native to southern Asia, requiring temperatures between 20 and 30 °C and a considerable amount of annual rainfall to thrive."
+      "desc": "A rhizomatous herbaceous perennial plant of the ginger family, Zingiberaceae. It is native to southern Asia, requiring temperatures between 20 and 30 °C and a considerable amount of annual rainfall to thrive.",
+      "img": "turmeric-943628_640.jpg"
     }, {
       "id": 2,
       "name": "Cumin",
-      "desc": "A flowering plant in the family Apiaceae, native from the east Mediterranean to South Asia. Its seeds are used in the cuisines of many different cultures, in both whole and ground form."
+      "desc": "A flowering plant in the family Apiaceae, native from the east Mediterranean to South Asia. Its seeds are used in the cuisines of many different cultures, in both whole and ground form.",
+      "img": "whole-cumin-1049551_640.jpg"
     }, {
       "id": 3,
       "name": "Thyme",
-      "desc": "An evergreen herb with culinary, medicinal, and ornamental uses. The most common variety is Thymus vulgaris. It is of the genus Thymus of the mint family, and a relative of the oregano genus Origanum."
+      "desc": "An evergreen herb with culinary, medicinal, and ornamental uses. The most common variety is Thymus vulgaris. It is of the genus Thymus of the mint family, and a relative of the oregano genus Origanum.",
+      "img": "vegetables-2202504_640.jpg"
     }, {
       "id": 4,
       "name": "Basil",
-      "desc": "Also called great basil or Saint-Joseph's-wort. It is a culinary herb of the family Lamiaceae. It is also called the 'king of herbs' and the 'royal herb'. The name 'basil' comes from Greek βασιλικόν φυτόν, 'royal/kingly plant'."
+      "desc": "Also called great basil or Saint-Joseph's-wort. It is a culinary herb of the family Lamiaceae. It is also called the 'king of herbs' and the 'royal herb'. The name 'basil' comes from Greek βασιλικόν φυτόν, 'royal/kingly plant'.",
+      "img": "appetite-1239157_640.jpg"
     }, {
       "id": 5,
       "name": "Oregano",
-      "desc": "Native to temperate western and southwestern Eurasia and the Mediterranean region. It is a perennial herb, growing from 20–80 cm (7.9–31.5 in) tall, with opposite leaves 1–4 cm (0.39–1.57 in) long."
+      "desc": "Native to temperate western and southwestern Eurasia and the Mediterranean region. It is a perennial herb, growing from 20–80 cm (7.9–31.5 in) tall, with opposite leaves 1–4 cm (0.39–1.57 in) long.",
+      "img": "oregano-321746_640.jpg"
     }
   ]
 }

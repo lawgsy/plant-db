@@ -6,7 +6,7 @@ import Http
 import Json.Decode as Decode
 import Json.Decode.Pipeline exposing (decode, required)
 import Msgs exposing (Msg)
-import Models exposing (PlantId, Plant)
+import Models exposing (PlantId, Plant, Data)
 import RemoteData
 
 
@@ -19,12 +19,22 @@ fetchPlants =
 
 fetchPlantsUrl : String
 fetchPlantsUrl =
-    "http://localhost:4000/plants"
+    "db.json"
 
 
-plantsDecoder : Decode.Decoder (List Plant)
+
+-- "http://localhost:4000/plants"
+
+
+plantsDecoder : Decode.Decoder Data
 plantsDecoder =
-    Decode.list plantDecoder
+    Json.Decode.Pipeline.decode Data
+        |> Json.Decode.Pipeline.required "plants" (Decode.list plantDecoder)
+
+
+
+-- Decode.map (required "plants" (Decode.list plantDecoder))
+-- (Decode.list plantDecoder)
 
 
 plantDecoder : Decode.Decoder Plant
@@ -33,3 +43,4 @@ plantDecoder =
         |> required "id" Decode.int
         |> required "name" Decode.string
         |> required "desc" Decode.string
+        |> required "img" Decode.string

@@ -3,6 +3,7 @@ module Update exposing (..)
 -- Material
 
 import Material
+import Material.Table as Table
 
 
 -- App related
@@ -20,4 +21,20 @@ update msg model =
             Material.update Mdl msg_ model
 
         Msgs.OnFetchPlants response ->
-            ( { model | plants = response }, Cmd.none )
+            ( { model | data = response }, Cmd.none )
+
+        ReorderTable ->
+            ( { model | tableOrder = rotate model.tableOrder }, Cmd.none )
+
+
+rotate : Maybe Table.Order -> Maybe Table.Order
+rotate order =
+    case order of
+        Just (Table.Ascending) ->
+            Just Table.Descending
+
+        Just (Table.Descending) ->
+            Just Table.Ascending
+
+        Nothing ->
+            Just Table.Ascending

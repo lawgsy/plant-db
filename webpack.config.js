@@ -12,6 +12,11 @@ module.exports = {
     filename: '[name].js',
   },
 
+  // build: {
+  //   assetsPublicPath: '/assets/img/',
+  //   assetsSubDirectory: 'assets/img'
+  // },
+
   module: {
     rules: [
       {
@@ -39,6 +44,18 @@ module.exports = {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'file-loader',
       },
+      {
+        test: /CNAME$/,
+        loader: 'file-loader?name=[name]',
+      },
+      {
+        test: /\.json$/,
+        loader: 'file-loader?name=[name].[ext]',
+      },
+      // {
+      //   test: /\.(jpe?g|gif|png)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      //   loader: 'file-loader?name=[path][name].[ext]',
+      // },
     ],
 
     noParse: /\.elm$/,
@@ -47,7 +64,6 @@ module.exports = {
   devServer: {
     inline: true,
     stats: { colors: true },
-  },
-
+  }
 
 };
