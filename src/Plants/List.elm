@@ -91,9 +91,13 @@ plantRow : Plant -> Html Msg
 plantRow plant =
     --(parseLocation plant.id)(plantPath plant.id)
     -- Options.attribute <| onClick (text "#test")
-    Table.tr [ Options.attribute <| onClick (Msgs.NewLocation (plantPath plant.id)) ]
+    Table.tr [ Options.attribute <| onClick (Msgs.NewLocation (plantPath plant.id)), Options.css "cursor" "pointer" ]
         -- [ Table.td [ Table.numeric ] [ text (toString plant.id) ]
-        [ Table.td [ Options.cs "max-width-4", Table.numeric ] [ text plant.name ]
-        , Table.td [ Options.cs "max-width-4" ] [ text plant.description ]
+        [ Table.td
+            [ Options.cs "max-width-4", Options.css "cursor" "pointer", Table.numeric ]
+            [ text plant.name ]
+        , Table.td
+            [ Options.cs "max-width-4", Options.css "cursor" "pointer" ]
+            [ text plant.description ]
           -- , Table.td [] [ img [ src ("assets/img/" ++ plant.img), width 200 ] [] ]
         ]

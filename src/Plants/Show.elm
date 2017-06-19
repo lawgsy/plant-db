@@ -15,6 +15,7 @@ import Html.Attributes exposing (class, value, href)
 import Msgs exposing (Msg)
 import Models exposing (Model, Plant)
 import Routing exposing (plantsPath)
+import List exposing (map)
 
 
 view : Model -> Plant -> Html Msg
@@ -44,50 +45,21 @@ display model plant =
 
 infoTable : Plant -> Html Msg
 infoTable plant =
-    Table.table []
-        [ Table.tbody []
-            [ Table.tr
-                []
-                [ Table.td [] [ text "Scientific name" ]
-                , Table.td [ Table.numeric ] [ text plant.name_scientific ]
-                ]
-            , Table.tr
-                []
-                [ Table.td [] [ text "Family" ]
-                , Table.td [ Table.numeric ] [ text plant.family ]
-                ]
-            , Table.tr
-                []
-                [ Table.td [] [ text "Description" ]
-                , Table.td [ Table.numeric ] [ text plant.description ]
-                ]
-            , Table.tr
-                []
-                [ Table.td [] [ text "Image" ]
-                , Table.td [ Table.numeric ] [ text plant.img ]
-                ]
+    let
+        table_data =
+            [ ( "Scientific name", plant.name_scientific )
+            , ( "Family", plant.family )
+            , ( "Description", plant.description )
+            , ( "Image", plant.img )
             ]
+    in
+        Table.table []
+            [ Table.tbody [] (List.map showRow table_data) ]
+
+
+showRow : ( String, String ) -> Html Msg
+showRow ( txt, content ) =
+    Table.tr []
+        [ Table.td [] [ text txt ]
+        , Table.td [ Options.cs "max-width-4" ] [ text content ]
         ]
-
-
-
--- div
---     [ class "clearfix py1"
---     ]
---     [ div [ class "col col-1" ] [ text "Scientific name" ]
---     , div [ class "col col-11" ]
---         [ span [ class "h2 bold" ] [ text plant.name_scientific ]
---         ]
---     , div [ class "col col-1" ] [ text "Family" ]
---     , div [ class "col col-11" ]
---         [ span [ class "h2 bold" ] [ text plant.family ]
---         ]
---     , div [ class "col col-1" ] [ text "Description" ]
---     , div [ class "col col-11" ]
---         [ span [ class "h2 bold" ] [ text plant.description ]
---         ]
---     , div [ class "col col-1" ] [ text "Image" ]
---     , div [ class "col col-11" ]
---         [ span [ class "h2 bold" ] [ text plant.img ]
---         ]
---     ]
