@@ -13,6 +13,9 @@ import RemoteData
 -- import Material
 
 import Material.Layout as Layout
+import Material.Textfield as Textfield
+import Material.Options as Options
+import Material.Icon as Icon
 
 
 view : Model -> Html Msg
@@ -28,9 +31,59 @@ page model =
     Layout.render Msgs.Mdl
         model.mdl
         [ Layout.fixedHeader
+        , Layout.waterfall False
         ]
-        { header = [ h1 [ class "pl3" ] [ text "Plant database" ] ]
-        , drawer = []
+        { header =
+            [ Layout.row
+                [ Options.css "transition" "height 333ms ease-in-out 0s"
+                ]
+                [ Layout.link
+                    [ Layout.href "#plants" ]
+                    [ Layout.title []
+                        [ text "Plant database"
+                        ]
+                    ]
+                , Layout.spacer
+                , Layout.navigation []
+                    [ Textfield.render Msgs.Mdl
+                        [ 7 ]
+                        model.mdl
+                        [ Textfield.label "Search for a plant..."
+                        , Textfield.floatingLabel
+                        , Textfield.expandable "id-of-expandable-1"
+                        , Textfield.expandableIcon "search"
+                        , Options.cs "ml1"
+                        ]
+                        []
+                    ]
+                ]
+            ]
+            -- [ div [ class "align-self flex-end", Html.css "height" "192px" ]
+            --     [ text "Plant database"
+            --     , Textfield.render Msgs.Mdl
+            --         [ 7 ]
+            --         model.mdl
+            --         [ Textfield.label "Search for a plant..."
+            --         , Textfield.floatingLabel
+            --         , Textfield.expandable "id-of-expandable-1"
+            --         , Textfield.expandableIcon "search"
+            --         , Options.cs "ml4"
+            --         ]
+            --         []
+            --     ]
+            -- ]
+        , drawer =
+            [ Layout.title [] [ text "Navigation" ]
+            , Layout.navigation
+                []
+                [ Layout.link
+                    [ Layout.href "#plants" ]
+                    [ Html.span [] [ text "Home" ] ]
+                , Layout.link
+                    [ Layout.href "https://en.wikipedia.org/" ]
+                    [ Html.span [] [ text "Wikipedia" ] ]
+                ]
+            ]
         , tabs = ( [], [] )
         , main = [ viewBody model ]
         }

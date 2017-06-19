@@ -94,6 +94,6 @@ plantRow plant =
     Table.tr [ Options.attribute <| onClick (Msgs.NewLocation (plantPath plant.id)) ]
         -- [ Table.td [ Table.numeric ] [ text (toString plant.id) ]
         [ Table.td [ Options.cs "max-width-4", Table.numeric ] [ text plant.name ]
-        , Table.td [ Options.cs "max-width-4" ] [ text plant.desc ]
+        , Table.td [ Options.cs "max-width-4" ] [ text plant.description ]
           -- , Table.td [] [ img [ src ("assets/img/" ++ plant.img), width 200 ] [] ]
         ]

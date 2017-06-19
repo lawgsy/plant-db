@@ -1,30 +1,54 @@
 {
   "plants": [
     {
-      "id": 1,
-      "name": "Turmeric",
-      "desc": "A rhizomatous herbaceous perennial plant of the ginger family, Zingiberaceae. It is native to southern Asia, requiring temperatures between 20 and 30 °C and a considerable amount of annual rainfall to thrive.",
-      "img": "turmeric-943628_640.jpg"
+      "id": 1
+    , "name": "Turmeric"
+    , "name_scientific": "Curcurma domestica"
+    , "family": "Zingiberaceae"
+    , "description": "A rhizomatous herbaceous perennial plant of the ginger family, Zingiberaceae. It is native to southern Asia, requiring temperatures between 20 and 30 °C and a considerable amount of annual rainfall to thrive."
+    , "img": "turmeric-943628_640.jpg"
     }, {
-      "id": 2,
-      "name": "Cumin",
-      "desc": "A flowering plant in the family Apiaceae, native from the east Mediterranean to South Asia. Its seeds are used in the cuisines of many different cultures, in both whole and ground form.",
-      "img": "whole-cumin-1049551_640.jpg"
+      "id": 2
+    , "name": "Cumin"
+    , "name_scientific": "Cuminum cyminum"
+    , "family": "Apiaceae"
+    , "description": "A flowering plant in the family Apiaceae, native from the east Mediterranean to South Asia. Its seeds are used in the cuisines of many different cultures, in both whole and ground form."
+    , "img": "whole-cumin-1049551_640.jpg"
     }, {
-      "id": 3,
-      "name": "Thyme",
-      "desc": "An evergreen herb with culinary, medicinal, and ornamental uses. The most common variety is Thymus vulgaris. It is of the genus Thymus of the mint family, and a relative of the oregano genus Origanum.",
-      "img": "vegetables-2202504_640.jpg"
+      "id": 3
+    , "name": "Thyme"
+    , "name_scientific": "Thymus vulgaris"
+    , "family": "Lamiaceae"
+    , "description": "An evergreen herb with culinary, medicinal, and ornamental uses. The most common variety is Thymus vulgaris. It is of the genus Thymus of the mint family, and a relative of the oregano genus Origanum."
+    , "img": "vegetables-2202504_640.jpg"
     }, {
-      "id": 4,
-      "name": "Basil",
-      "desc": "Also called great basil or Saint-Joseph's-wort. It is a culinary herb of the family Lamiaceae. It is also called the 'king of herbs' and the 'royal herb'. The name 'basil' comes from Greek βασιλικόν φυτόν, 'royal/kingly plant'.",
-      "img": "appetite-1239157_640.jpg"
+      "id": 4
+    , "name": "Basil"
+    , "name_scientific": "Ocimum basilicum"
+    , "family": "Lamiaceae"
+    , "description": "Also called great basil or Saint-Joseph's-wort. It is a culinary herb of the family Lamiaceae. It is also called the 'king of herbs' and the 'royal herb'. The name 'basil' comes from Greek βασιλικόν φυτόν, 'royal/kingly plant'."
+    , "img": "appetite-1239157_640.jpg"
     }, {
-      "id": 5,
-      "name": "Oregano",
-      "desc": "Native to temperate western and southwestern Eurasia and the Mediterranean region. It is a perennial herb, growing from 20–80 cm (7.9–31.5 in) tall, with opposite leaves 1–4 cm (0.39–1.57 in) long.",
-      "img": "oregano-321746_640.jpg"
+      "id": 5
+    , "name": "Oregano"
+    , "name_scientific": "Origanum vulgare"
+    , "family": "Lamiaceae"
+    , "description": "Native to temperate western and southwestern Eurasia and the Mediterranean region. It is a perennial herb, growing from 20–80 cm (7.9–31.5 in) tall, with opposite leaves 1–4 cm (0.39–1.57 in) long."
+    , "img": "oregano-321746_640.jpg"
+    }, {
+      "id": 6
+    , "name": "Lovage"
+    , "name_scientific": "Levisticum officinale"
+    , "family": "Apiaceae"
+    , "description": "Lovage, Levisticum officinale, is a tall perennial plant, the sole species in the genus Levisticum in the family Apiaceae, subfamily Apioideae, tribe Apieae."
+    , "img": "lovage.jpg"
+    }, {
+      "id": 7
+    , "name": "Ginger"
+    , "name_scientific": "Zingiber officinale"
+    , "family": "Zingiberaceae"
+    , "description": "Ginger (Zingiber officinale) is a flowering plant whose rhizome, ginger root or simply ginger, is widely used as a spice or a folk medicine"
+    , "img": "800px-Ginger_roots_in_supermarket.jpg"
     }
   ]
 }

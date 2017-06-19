@@ -42,5 +42,7 @@ plantDecoder =
     decode Plant
         |> required "id" Decode.int
         |> required "name" Decode.string
-        |> required "desc" Decode.string
+        |> required "name_scientific" Decode.string
+        |> required "family" Decode.string
+        |> required "description" Decode.string
         |> required "img" Decode.string

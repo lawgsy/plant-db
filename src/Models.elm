@@ -42,7 +42,9 @@ type alias PlantId =
 type alias Plant =
     { id : PlantId
     , name : String
-    , desc : String
+    , name_scientific : String
+    , family : String
+    , description : String
     , img : String
     }
 
