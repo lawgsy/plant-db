@@ -15,6 +15,7 @@ Plant database with search. Mainly for toxicity/culinary/medical information.
 1. Install [Elm](http://elm-lang.org/)
 2. Install [yarn](https://yarnpkg.com/lang/en/)
 3. Run `yarn` or `yarn install` to install the dependencies
+4. Create an empty file called CNAME in the root of the project (`touch CNAME` in your terminal or `echo "" > CNAME` in your command prompt).
 
 # How to run
 
