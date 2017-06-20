@@ -15,7 +15,9 @@ import RemoteData
 import Material.Layout as Layout
 import Material.Textfield as Textfield
 import Material.Options as Options
-import Material.Icon as Icon
+
+
+-- import Material.Icon as Icon
 
 
 view : Model -> Html Msg

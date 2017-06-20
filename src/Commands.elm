@@ -10,6 +10,9 @@ import Models exposing (PlantId, Plant, Data)
 import RemoteData
 
 
+-- import String
+
+
 fetchPlants : Cmd Msg
 fetchPlants =
     Http.get fetchPlantsUrl plantsDecoder
@@ -28,8 +31,8 @@ fetchPlantsUrl =
 
 plantsDecoder : Decode.Decoder Data
 plantsDecoder =
-    Json.Decode.Pipeline.decode Data
-        |> Json.Decode.Pipeline.required "plants" (Decode.list plantDecoder)
+    decode Data
+        |> required "plants" (Decode.list plantDecoder)
 
 
 
@@ -43,6 +46,10 @@ plantDecoder =
         |> required "id" Decode.int
         |> required "name" Decode.string
         |> required "name_scientific" Decode.string
+        |> required "synonyms" (Decode.list Decode.string)
         |> required "family" Decode.string
         |> required "description" Decode.string
+        |> required "uses_culinary" (Decode.list Decode.string)
+        |> required "uses_medical" (Decode.list Decode.string)
+        |> required "warnings" (Decode.list Decode.string)
         |> required "img" Decode.string

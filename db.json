@@ -3,51 +3,88 @@
     {
       "id": 1
     , "name": "Turmeric"
-    , "name_scientific": "Curcurma domestica"
+    , "name_scientific": "Curcurma longa"
+    , "synonyms": [
+      "Acafrao-da-India", "Arishina", "Curcuma", "Fanwin", "Gelber Ingwer", "Gelbwurz", "Gilbwurz", "Gurkmeja", "Halad", "Haladi", "Halda", "Haldhar", "Haldhor", "Haldi", "Haridra", "Harita", "Holud", "Indiase geelwortel", "Indiase saffraan", "Kaha", "Kamin", "Koenier", "Koenjit", "Kunjit", "Kunyit", "Kurkum", "Kurkuma", "Kurkume", "Lidar", "Manjal", "Ollod", "Ollodi", "Pasupu", "Saffron des Indes", "Safranwurz", "Tarmeriek", "Turmeric", "Yu. Chin", "Zholty Imbir"
+    ]
     , "family": "Zingiberaceae"
     , "description": "A rhizomatous herbaceous perennial plant of the ginger family, Zingiberaceae. It is native to southern Asia, requiring temperatures between 20 and 30 °C and a considerable amount of annual rainfall to thrive."
+    , "edible parts": ["roots"]
+    , "uses_culinary": []
+    , "uses_medical": []
+    , "warnings": []
     , "img": "turmeric-943628_640.jpg"
     }, {
       "id": 2
     , "name": "Cumin"
     , "name_scientific": "Cuminum cyminum"
+    , "synonyms": []
     , "family": "Apiaceae"
     , "description": "A flowering plant in the family Apiaceae, native from the east Mediterranean to South Asia. Its seeds are used in the cuisines of many different cultures, in both whole and ground form."
+    , "edible_parts": ["seeds"]
+    , "uses_culinary": []
+    , "uses_medical": []
+    , "warnings": ["May cause hypoglycaemia. Caution need for diabetics. Avoid if taking barbiturates"]
     , "img": "whole-cumin-1049551_640.jpg"
     }, {
       "id": 3
     , "name": "Thyme"
     , "name_scientific": "Thymus vulgaris"
+    , "synonyms": []
     , "family": "Lamiaceae"
     , "description": "An evergreen herb with culinary, medicinal, and ornamental uses. The most common variety is Thymus vulgaris. It is of the genus Thymus of the mint family, and a relative of the oregano genus Origanum."
+    , "edible_parts": ["leaves"]
+    , "uses_culinary": ["tea", "condiment"]
+    , "uses_medical": []
+    , "warnings": ["A comment has been made in one report on medicinal uses that the plant should be used with caution[21]. No explanation was given. It quite possibly refers to overuse of the essential oil. All essential oils, since they are so concentrated, can be harmful in large doses[K]. Avoid if inflammatory disease of the gastrointestinal tract. Internal use contraindicated especially in pregnancy. Caution if sensitive to grasses [301]. Dilute oil in carrier oil before topical use."]
     , "img": "vegetables-2202504_640.jpg"
     }, {
       "id": 4
     , "name": "Basil"
     , "name_scientific": "Ocimum basilicum"
+    , "synonyms": []
     , "family": "Lamiaceae"
     , "description": "Also called great basil or Saint-Joseph's-wort. It is a culinary herb of the family Lamiaceae. It is also called the 'king of herbs' and the 'royal herb'. The name 'basil' comes from Greek βασιλικόν φυτόν, 'royal/kingly plant'."
+    , "edible_parts": ["leaves"]
+    , "uses_culinary": ["tea", "condiment"]
+    , "uses_medical": []
+    , "warnings": []
     , "img": "appetite-1239157_640.jpg"
     }, {
       "id": 5
     , "name": "Oregano"
     , "name_scientific": "Origanum vulgare"
+    , "synonyms": []
     , "family": "Lamiaceae"
     , "description": "Native to temperate western and southwestern Eurasia and the Mediterranean region. It is a perennial herb, growing from 20–80 cm (7.9–31.5 in) tall, with opposite leaves 1–4 cm (0.39–1.57 in) long."
+    , "edible_parts": ["leaves"]
+    , "uses_culinary": []
+    , "uses_medical": []
+    , "warnings": []
     , "img": "oregano-321746_640.jpg"
     }, {
       "id": 6
     , "name": "Lovage"
     , "name_scientific": "Levisticum officinale"
+    , "synonyms": []
     , "family": "Apiaceae"
     , "description": "Lovage, Levisticum officinale, is a tall perennial plant, the sole species in the genus Levisticum in the family Apiaceae, subfamily Apioideae, tribe Apieae."
+    , "edible_parts": ["leaves"]
+    , "uses_culinary": []
+    , "uses_medical": []
+    , "warnings": []
     , "img": "lovage.jpg"
     }, {
       "id": 7
     , "name": "Ginger"
     , "name_scientific": "Zingiber officinale"
+    , "synonyms": []
     , "family": "Zingiberaceae"
     , "description": "Ginger (Zingiber officinale) is a flowering plant whose rhizome, ginger root or simply ginger, is widely used as a spice or a folk medicine"
+    , "edible_parts": ["roots"]
+    , "uses_culinary": []
+    , "uses_medical": []
+    , "warnings": []
     , "img": "800px-Ginger_roots_in_supermarket.jpg"
     }
   ]
