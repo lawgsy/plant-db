@@ -22,6 +22,7 @@ type alias Model =
     , data : WebData Data
     , tableOrder : Maybe Table.Order
     , route : Route
+    , keyword : String
     }
 
 
@@ -32,6 +33,7 @@ initialModel route =
         RemoteData.Loading
     , tableOrder = Just Table.Ascending
     , route = route
+    , keyword = ""
     }
 
 
