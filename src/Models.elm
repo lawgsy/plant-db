@@ -43,8 +43,12 @@ type alias Plant =
     { id : PlantId
     , name : String
     , name_scientific : String
+    , synonyms : List String
     , family : String
     , description : String
+    , uses_culinary : List String
+    , uses_medical : List String
+    , warnings : List String
     , img : String
     }
 

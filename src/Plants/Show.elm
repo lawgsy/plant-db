@@ -15,7 +15,7 @@ import Html.Attributes exposing (class, value, href)
 import Msgs exposing (Msg)
 import Models exposing (Model, Plant)
 import Routing exposing (plantsPath)
-import List exposing (map)
+import List exposing (map, foldr)
 
 
 view : Model -> Plant -> Html Msg
@@ -48,6 +48,7 @@ infoTable plant =
     let
         table_data =
             [ ( "Scientific name", plant.name_scientific )
+            , ( "Synonyms", String.join ", " (List.sort plant.synonyms) )
             , ( "Family", plant.family )
             , ( "Description", plant.description )
             , ( "Image", plant.img )
