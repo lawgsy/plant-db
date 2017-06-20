@@ -51,7 +51,7 @@ infoTable plant =
             , ( "Synonyms", String.join ", " (List.sort plant.synonyms) )
             , ( "Family", plant.family )
             , ( "Description", plant.description )
-            , ( "Image", plant.img )
+              -- , ( "Image", plant.img )
             ]
     in
         Table.table []

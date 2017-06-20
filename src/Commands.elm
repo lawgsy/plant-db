@@ -4,9 +4,9 @@ module Commands exposing (..)
 
 import Http
 import Json.Decode as Decode
-import Json.Decode.Pipeline exposing (decode, required)
+import Json.Decode.Pipeline exposing (decode, required, optional)
 import Msgs exposing (Msg)
-import Models exposing (PlantId, Plant, Data)
+import Models exposing (PlantId, Plant, Data, ImageObject)
 import RemoteData
 
 
@@ -52,4 +52,12 @@ plantDecoder =
         |> required "uses_culinary" (Decode.list Decode.string)
         |> required "uses_medical" (Decode.list Decode.string)
         |> required "warnings" (Decode.list Decode.string)
-        |> required "img" Decode.string
+        |> required "img" imageDecoder
+
+
+imageDecoder : Decode.Decoder ImageObject
+imageDecoder =
+    decode ImageObject
+        |> required "url" Decode.string
+        |> required "author" Decode.string
+        |> required "license" Decode.string

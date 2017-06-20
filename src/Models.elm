@@ -39,6 +39,13 @@ type alias PlantId =
     Int
 
 
+type alias ImageObject =
+    { url : String
+    , copyright : String
+    , license : String
+    }
+
+
 type alias Plant =
     { id : PlantId
     , name : String
@@ -49,7 +56,7 @@ type alias Plant =
     , uses_culinary : List String
     , uses_medical : List String
     , warnings : List String
-    , img : String
+    , img : ImageObject
     }
 
 

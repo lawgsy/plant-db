@@ -13,7 +13,11 @@
     , "uses_culinary": []
     , "uses_medical": []
     , "warnings": []
-    , "img": "turmeric-943628_640.jpg"
+    , "img": {
+      "url": "https://c7.staticflickr.com/8/7203/6968238534_888eb335cc_o.jpg",
+      "author": "William Ismael",
+      "license": "CC BY 2.0"
+    }
     }, {
       "id": 2
     , "name": "Cumin"
@@ -25,7 +29,7 @@
     , "uses_culinary": []
     , "uses_medical": []
     , "warnings": ["May cause hypoglycaemia. Caution need for diabetics. Avoid if taking barbiturates"]
-    , "img": "whole-cumin-1049551_640.jpg"
+    , "img": { "url": "", "author": "", "license": "" }
     }, {
       "id": 3
     , "name": "Thyme"
@@ -37,7 +41,7 @@
     , "uses_culinary": ["tea", "condiment"]
     , "uses_medical": []
     , "warnings": ["A comment has been made in one report on medicinal uses that the plant should be used with caution[21]. No explanation was given. It quite possibly refers to overuse of the essential oil. All essential oils, since they are so concentrated, can be harmful in large doses[K]. Avoid if inflammatory disease of the gastrointestinal tract. Internal use contraindicated especially in pregnancy. Caution if sensitive to grasses [301]. Dilute oil in carrier oil before topical use."]
-    , "img": "vegetables-2202504_640.jpg"
+    , "img": { "url": "", "author": "", "license": "" }
     }, {
       "id": 4
     , "name": "Basil"
@@ -49,7 +53,7 @@
     , "uses_culinary": ["tea", "condiment"]
     , "uses_medical": []
     , "warnings": []
-    , "img": "appetite-1239157_640.jpg"
+    , "img": { "url": "", "author": "", "license": "" }
     }, {
       "id": 5
     , "name": "Oregano"
@@ -61,7 +65,7 @@
     , "uses_culinary": []
     , "uses_medical": []
     , "warnings": []
-    , "img": "oregano-321746_640.jpg"
+    , "img": { "url": "", "author": "", "license": "" }
     }, {
       "id": 6
     , "name": "Lovage"
@@ -73,7 +77,7 @@
     , "uses_culinary": []
     , "uses_medical": []
     , "warnings": []
-    , "img": "lovage.jpg"
+    , "img": { "url": "", "author": "", "license": "" }
     }, {
       "id": 7
     , "name": "Ginger"
@@ -85,7 +89,7 @@
     , "uses_culinary": []
     , "uses_medical": []
     , "warnings": []
-    , "img": "800px-Ginger_roots_in_supermarket.jpg"
+    , "img": { "url": "", "author": "", "license": "" }
     }
   ]
 }
