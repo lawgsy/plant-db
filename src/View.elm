@@ -15,6 +15,7 @@ import RemoteData
 import Material.Layout as Layout
 import Material.Textfield as Textfield
 import Material.Options as Options
+import Html.Events exposing (onInput)
 
 
 -- import Material.Icon as Icon
@@ -50,11 +51,13 @@ page model =
                     [ Textfield.render Msgs.Mdl
                         [ 7 ]
                         model.mdl
-                        [ Textfield.label "Search for a plant..."
+                        [ Textfield.label "Filter plants..."
                         , Textfield.floatingLabel
                         , Textfield.expandable "id-of-expandable-1"
                         , Textfield.expandableIcon "search"
-                        , Options.cs "ml1"
+                        , Textfield.value model.keyword
+                        , Options.onInput Msgs.UpdateKeyword
+                        , Options.cs "ml1 pt3"
                         ]
                         []
                     ]
@@ -96,7 +99,8 @@ viewBody model =
     div [ class "p3" ]
         [ case model.route of
             Models.PlantsRoute ->
-                (Plants.List.view model.data model.tableOrder)
+                -- (Plants.List.view model.data model.tableOrder model.keyword model.mdl)
+                (Plants.List.view model)
 
             Models.PlantRoute id ->
                 plantShowPage model id

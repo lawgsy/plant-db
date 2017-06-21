@@ -44,6 +44,9 @@ update msg model =
             , Navigation.newUrl url
             )
 
+        Msgs.UpdateKeyword query ->
+            ( { model | keyword = query }, Cmd.none )
+
 
 rotate : Maybe Table.Order -> Maybe Table.Order
 rotate order =

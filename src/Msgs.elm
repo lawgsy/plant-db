@@ -18,3 +18,4 @@ type Msg
     | ReorderTable
     | OnLocationChange Location
     | NewLocation String
+    | UpdateKeyword String
