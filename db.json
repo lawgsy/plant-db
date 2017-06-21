@@ -15,8 +15,9 @@
     , "warnings": []
     , "img": {
       "url": "https://c7.staticflickr.com/8/7203/6968238534_888eb335cc_o.jpg",
-      "author": "William Ismael",
-      "license": "CC BY 2.0"
+      "link": "[Turmeric](https://www.flickr.com/photos/williamismael/6968238534)",
+      "author": "[William Ismael](https://www.flickr.com/people/williamismael/)",
+      "license": "[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)"
     }
     }, {
       "id": 2
@@ -29,7 +30,12 @@
     , "uses_culinary": []
     , "uses_medical": []
     , "warnings": ["May cause hypoglycaemia. Caution need for diabetics. Avoid if taking barbiturates"]
-    , "img": { "url": "", "author": "", "license": "" }
+    , "img": {
+      "url": "https://c7.staticflickr.com/3/2732/4410692457_03789e6128_o.jpg",
+      "link": "[Cumin](https://www.flickr.com/photos/gusjer/4410692457)",
+      "author": "[*Gusjer*](https://www.flickr.com/people/gusjer/)",
+      "license": "[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)"
+    }
     }, {
       "id": 3
     , "name": "Thyme"
@@ -41,7 +47,11 @@
     , "uses_culinary": ["tea", "condiment"]
     , "uses_medical": []
     , "warnings": ["A comment has been made in one report on medicinal uses that the plant should be used with caution[21]. No explanation was given. It quite possibly refers to overuse of the essential oil. All essential oils, since they are so concentrated, can be harmful in large doses[K]. Avoid if inflammatory disease of the gastrointestinal tract. Internal use contraindicated especially in pregnancy. Caution if sensitive to grasses [301]. Dilute oil in carrier oil before topical use."]
-    , "img": { "url": "", "author": "", "license": "" }
+    , "img": { "url": "",
+      "link": "[thyme from my herb garden](https://www.flickr.com/photos/alicehenneman/5850714607",
+      "author": "[Alice Henneman](https://www.flickr.com/people/alicehenneman/)",
+      "license": "[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)"
+    }
     }, {
       "id": 4
     , "name": "Basil"
@@ -53,7 +63,12 @@
     , "uses_culinary": ["tea", "condiment"]
     , "uses_medical": []
     , "warnings": []
-    , "img": { "url": "", "author": "", "license": "" }
+    , "img": {
+      "url": "https://c2.staticflickr.com/8/7397/9108514553_1557952278_o.jpg",
+      "link": "[Basil](https://www.flickr.com/photos/aldenchadwick/9108514553)",
+      "author": "[Alden Chadwick](https://www.flickr.com/people/aldenchadwick/)",
+      "license": "[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)"
+     }
     }, {
       "id": 5
     , "name": "Oregano"
@@ -65,7 +80,12 @@
     , "uses_culinary": []
     , "uses_medical": []
     , "warnings": []
-    , "img": { "url": "", "author": "", "license": "" }
+    , "img": {
+      "url": "https://c8.staticflickr.com/1/5/10636112_034a6147f1_o.jpg",
+      "link": "[Oregano - Origanum vulgare](https://www.flickr.com/photos/sunrise/10636112)",
+       "author": "[color line](https://www.flickr.com/people/sunrise/)",
+       "license": "[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)"
+     }
     }, {
       "id": 6
     , "name": "Lovage"
@@ -77,7 +97,12 @@
     , "uses_culinary": []
     , "uses_medical": []
     , "warnings": []
-    , "img": { "url": "", "author": "", "license": "" }
+    , "img": {
+      "url": "https://farm3.staticflickr.com/3562/3464144477_ee1b6fb186_o.jpg",
+      "link": "[Photo of Lovage](https://www.flickr.com/photos/foodista/3464144477)",
+      "author": "[Foodista] (https://www.flickr.com/people/foodista/)",
+      "license": "[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)"
+    }
     }, {
       "id": 7
     , "name": "Ginger"
@@ -89,7 +114,29 @@
     , "uses_culinary": []
     , "uses_medical": []
     , "warnings": []
-    , "img": { "url": "", "author": "", "license": "" }
+    , "img": {
+      "url": "https://c7.staticflickr.com/4/3654/3329873915_017799216a_o.jpg",
+      "link": "[Ginger (raw)](https://www.flickr.com/photos/35832540@N03/3329873915)",
+      "author": "[Chandrika Nair](https://www.flickr.com/people/35832540@N03/)",
+      "license": "[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)"
+    }
+    }, {
+      "id": 8
+    , "name": "Tomato"
+    , "name_scientific": "Solanum lycopersicum"
+    , "synonyms": []
+    , "family": "Solanaceae"
+    , "description": "The tomato is the edible fruit of Solanum lycopersicum, commonly known as a tomato plant, which belongs to the nightshade family, Solanaceae. The species originated in Central and South America."
+    , "edible_parts": ["fruits", "seeds"]
+    , "uses_culinary": []
+    , "uses_medical": []
+    , "warnings": []
+    , "img": {
+      "url": "https://c7.staticflickr.com/4/3149/3026014294_59f00dc603_o.jpg",
+      "link": "[Italian Vine Tomatoes](https://www.flickr.com/photos/geishaboy500/3026014294)",
+      "author": "[THOR](https://www.flickr.com/people/geishaboy500/)",
+      "license": "[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)"
+    }
     }
   ]
 }

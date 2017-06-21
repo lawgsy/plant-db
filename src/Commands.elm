@@ -59,5 +59,6 @@ imageDecoder : Decode.Decoder ImageObject
 imageDecoder =
     decode ImageObject
         |> required "url" Decode.string
+        |> required "link" Decode.string
         |> required "author" Decode.string
         |> required "license" Decode.string

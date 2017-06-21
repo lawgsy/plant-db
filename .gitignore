@@ -1,4 +1,4 @@
-# Files
+# Built files
 dist/
 
 # File types
@@ -10,3 +10,4 @@ elm-stuff/
 
 # Other
 CNAME
+notes/

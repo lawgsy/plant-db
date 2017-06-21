@@ -43,7 +43,8 @@ type alias PlantId =
 
 type alias ImageObject =
     { url : String
-    , copyright : String
+    , link : String
+    , author : String
     , license : String
     }
 
