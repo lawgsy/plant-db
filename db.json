@@ -47,8 +47,9 @@
     , "uses_culinary": ["tea", "condiment"]
     , "uses_medical": []
     , "warnings": ["A comment has been made in one report on medicinal uses that the plant should be used with caution[21]. No explanation was given. It quite possibly refers to overuse of the essential oil. All essential oils, since they are so concentrated, can be harmful in large doses[K]. Avoid if inflammatory disease of the gastrointestinal tract. Internal use contraindicated especially in pregnancy. Caution if sensitive to grasses [301]. Dilute oil in carrier oil before topical use."]
-    , "img": { "url": "",
-      "link": "[thyme from my herb garden](https://www.flickr.com/photos/alicehenneman/5850714607",
+    , "img": {
+      "url": "https://c4.staticflickr.com/4/3214/5850714607_cd6e3f12bf_o.jpg",
+      "link": "[thyme from my herb garden](https://www.flickr.com/photos/alicehenneman/5850714607)",
       "author": "[Alice Henneman](https://www.flickr.com/people/alicehenneman/)",
       "license": "[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)"
     }
