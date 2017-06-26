@@ -2,7 +2,7 @@
   "plants": [
     {
       "id": 1
-    , "name": "Turmeric"
+    , "name": "Turmeric (curcuma/indian saffran)"
     , "name_scientific": "Curcurma longa"
     , "synonyms": [
       "Acafrao-da-India", "Arishina", "Curcuma", "Fanwin", "Gelber Ingwer", "Gelbwurz", "Gilbwurz", "Gurkmeja", "Halad", "Haladi", "Halda", "Haldhar", "Haldhor", "Haldi", "Haridra", "Harita", "Holud", "Indiase geelwortel", "Indiase saffraan", "Kaha", "Kamin", "Koenier", "Koenjit", "Kunjit", "Kunyit", "Kurkum", "Kurkuma", "Kurkume", "Lidar", "Manjal", "Ollod", "Ollodi", "Pasupu", "Saffron des Indes", "Safranwurz", "Tarmeriek", "Turmeric", "Yu. Chin", "Zholty Imbir"
@@ -138,6 +138,24 @@
       "author": "[THOR](https://www.flickr.com/people/geishaboy500/)",
       "license": "[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)"
     }
+    }, {
+      "id": 9
+    , "name": "Eggplant (aubergine)"
+    , "name_scientific": "Solanum melongena"
+    , "synonyms": []
+    , "family": "Solanaceae"
+    , "description": "Eggplant, or aubergine, is a species of nightshade, grown for its edible fruit. Eggplant is the common name in North America, Australia and New Zealand, but British English uses the French word aubergine."
+    , "edible_parts": ["fruits", "seeds", "young leaves"]
+    , "uses_culinary": []
+    , "uses_medical": []
+    , "warnings": ["Leaves and flowers contain the toxin solanine and may cause sickness when eaten."]
+    , "img": {
+      "url": "https://c2.staticflickr.com/7/6004/5926238100_41f62ce6a5_o.jpg",
+      "link": "[Purple Eggplants](https://www.flickr.com/photos/emmandevin/5926238100)",
+      "author": "[Britt Reints](https://www.flickr.com/people/emmandevin/)",
+      "license": "[CC BY 2.0](https://creativecommons.org/licenses/by/2.0)"
     }
+    }
+
   ]
 }

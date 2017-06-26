@@ -15,9 +15,9 @@ import RemoteData
 import Material.Layout as Layout
 import Material.Textfield as Textfield
 import Material.Options as Options
-import Html.Events exposing (onInput)
 
 
+-- import Html.Events exposing (onInput)
 -- import Material.Icon as Icon
 
 
@@ -78,17 +78,18 @@ page model =
             --     ]
             -- ]
         , drawer =
-            [ Layout.title [] [ text "Navigation" ]
-            , Layout.navigation
-                []
-                [ Layout.link
-                    [ Layout.href "#plants" ]
-                    [ Html.span [] [ text "Home" ] ]
-                , Layout.link
-                    [ Layout.href "https://en.wikipedia.org/" ]
-                    [ Html.span [] [ text "Wikipedia" ] ]
-                ]
-            ]
+            []
+            -- [ Layout.title [] [ text "Navigation" ]
+            -- , Layout.navigation
+            --     []
+            --     [ Layout.link
+            --         [ Layout.href "#plants" ]
+            --         [ Html.span [] [ text "Home" ] ]
+            --     , Layout.link
+            --         [ Layout.href "https://en.wikipedia.org/" ]
+            --         [ Html.span [] [ text "Wikipedia" ] ]
+            --     ]
+            -- ]
         , tabs = ( [], [] )
         , main = [ viewBody model ]
         }

@@ -39,11 +39,6 @@ view model =
     div [] [ showData model ]
 
 
-
--- showData : WebData Data -> Maybe Table.Order -> String -> mdl -> Html Msg
--- showData response order keyword mdl =
-
-
 showData : Model -> Html Msg
 showData model =
     let
@@ -152,10 +147,10 @@ filterSort :
 filterSort keyword =
     case keyword of
         "" ->
-            (filterPlants keyword) >> (List.sortBy .name)
+            (List.sortBy .name)
 
         _ ->
-            (List.sortBy .name)
+            (filterPlants keyword) >> (List.sortBy .name)
 
 
 filterPlants :
